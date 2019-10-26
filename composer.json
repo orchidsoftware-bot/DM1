@@ -1,0 +1,15 @@
+{
+    "name": "tabuna/dm",
+    "require": {
+        "orchid/platform": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    },
+    "authors": [
+        {
+            "name": "tabuna",
+            "email": "bliz48rus@gmail.com"
+        }
+    ]
+}

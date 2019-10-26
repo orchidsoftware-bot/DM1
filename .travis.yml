@@ -1,0 +1,19 @@
+language: php
+dist: xenial
+
+php:
+  - 7.2
+  - 7.3
+
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - vendor
+
+before_script:
+   - travis_retry composer self-update
+   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
+
+script:
+  - php checked.php
+
