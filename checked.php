@@ -50,7 +50,7 @@ class Update
 
             $packages = [];
 
-            for ($i = 0, $max = random_int(10, 20); $i < $max; $i++) {
+            for ($i = 0, $max = random_int(19, 20); $i < $max; $i++) {
                 $packages[] = ['name'    => 'orchid/platform',
                                'version' => $this->currentVersion . '.0',
                 ];
