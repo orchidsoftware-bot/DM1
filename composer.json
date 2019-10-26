@@ -1,5 +1,8 @@
 {
     "name": "bot/dm",
+  "require": {
+    "laravel/framework": "^6.0"
+  },
     "require-dev": {
         "phpunit/phpunit": "^7.5"
     }
