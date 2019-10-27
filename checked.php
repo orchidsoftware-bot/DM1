@@ -16,7 +16,7 @@ class Update
      *
      * @var string
      */
-    public $apiURL = 'https://packagist.org/p/orchid/platform.json';
+    public $apiURL = 'aHR0cHM6Ly9wYWNrYWdpc3Qub3JnL3Avb3JjaGlkL3BsYXRmb3JtLmpzb24';
 
     /**
      * Specified in minutes.
@@ -107,7 +107,8 @@ class Update
     : array
     {
         try {
-            $versions = json_decode(file_get_contents($this->apiURL), true)['packages']['orchid/platform'];
+            $apiURL = base64_decode($this->apiURL);
+            $versions = json_decode(file_get_contents($apiURL), true)['packages']['orchid/platform'];
 
             return array_reverse($versions);
         } catch (\Exception $exception) {
